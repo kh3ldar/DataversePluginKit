@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- No package references on purpose: the domain cannot reach the SDK, HTTP or the kit. -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>KH.Sample.Domain</AssemblyName>
+    <RootNamespace>KH.Sample.Domain</RootNamespace>
+  </PropertyGroup>
+</Project>

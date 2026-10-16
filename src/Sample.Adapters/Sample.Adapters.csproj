@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net462;net10.0</TargetFrameworks>
+    <AssemblyName>KH.Sample.Adapters</AssemblyName>
+    <RootNamespace>KH.Sample.Adapters</RootNamespace>
+  </PropertyGroup>
+  <Import Project="..\..\build\XrmSdk.props" />
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Domain\Sample.Domain.csproj" />
+  </ItemGroup>
+</Project>

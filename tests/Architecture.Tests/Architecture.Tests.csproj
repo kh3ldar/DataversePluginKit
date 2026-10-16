@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\build\Tests.props" />
+  <ItemGroup>
+    <PackageReference Include="NetArchTest.Rules" Version="1.3.2" />
+    <ProjectReference Include="..\..\src\PluginKit\PluginKit.csproj" />
+    <ProjectReference Include="..\..\src\Sample.Domain\Sample.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Sample.Adapters\Sample.Adapters.csproj" />
+    <ProjectReference Include="..\..\src\Sample.Plugins\Sample.Plugins.csproj" />
+  </ItemGroup>
+</Project>

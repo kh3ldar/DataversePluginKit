@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>KH.PluginKit.Testing</RootNamespace>
+  </PropertyGroup>
+  <Import Project="..\..\build\XrmSdk.props" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\PluginKit\PluginKit.csproj" />
+  </ItemGroup>
+</Project>

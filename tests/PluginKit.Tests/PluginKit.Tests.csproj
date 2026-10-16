@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\build\Tests.props" />
+  <ItemGroup>
+    <ProjectReference Include="..\PluginKit.Testing\PluginKit.Testing.csproj" />
+  </ItemGroup>
+</Project>

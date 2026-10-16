@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net462;net10.0</TargetFrameworks>
+    <AssemblyName>KH.Sample.Plugins</AssemblyName>
+    <RootNamespace>KH.Sample.Plugins</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Plugin package metadata. It is unconditional because the package is packed once for the whole
+       project, outside any one target framework. Only the net462 build is meant for the package;
+       net10.0 exists so the tests can load these types on modern .NET. -->
+  <PropertyGroup>
+    <PackageId>kh_SamplePlugins</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>kh3ldar</Authors>
+    <Description>Sample plugin assembly for DataversePluginKit.</Description>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+    <PackageReference Include="Microsoft.PowerApps.MSBuild.Plugin" Version="2.13.1" PrivateAssets="All" />
+  </ItemGroup>
+
+  <Import Project="..\..\build\XrmSdk.props" />
+  <ItemGroup>
+    <ProjectReference Include="..\PluginKit\PluginKit.csproj" />
+    <ProjectReference Include="..\Sample.Domain\Sample.Domain.csproj" />
+    <ProjectReference Include="..\Sample.Adapters\Sample.Adapters.csproj" />
+  </ItemGroup>
+</Project>

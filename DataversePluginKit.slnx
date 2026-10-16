@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PluginKit/PluginKit.csproj" />
+    <Project Path="src/Sample.Domain/Sample.Domain.csproj" />
+    <Project Path="src/Sample.Adapters/Sample.Adapters.csproj" />
+    <Project Path="src/Sample.Plugins/Sample.Plugins.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PluginKit.Testing/PluginKit.Testing.csproj" />
+    <Project Path="tests/PluginKit.Tests/PluginKit.Tests.csproj" />
+    <Project Path="tests/Sample.Tests/Sample.Tests.csproj" />
+    <Project Path="tests/Architecture.Tests/Architecture.Tests.csproj" />
+  </Folder>
+</Solution>

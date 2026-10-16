@@ -1,0 +1,12 @@
+<Project>
+  <!-- One source, two SDK packages. net462 is the deployable build and compiles against
+       Microsoft.CrmSdk.CoreAssemblies. net10.0 exists so the tests run on modern .NET; it compiles against
+       Microsoft.PowerPlatform.Dataverse.Client, which ships Microsoft.Xrm.Sdk for modern .NET with the same
+       namespaces and interfaces. -->
+  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.60" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
+    <PackageReference Include="Microsoft.PowerPlatform.Dataverse.Client" Version="1.2.27" />
+  </ItemGroup>
+</Project>
